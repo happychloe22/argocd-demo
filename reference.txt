@@ -1,6 +1,10 @@
 # Get default password
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 
+# argocd demo
+https://github.com/argoproj/argocd-example-apps
+
+
 helm charts
 https://helm.sh/blog/new-location-stable-incubator-charts/
 
@@ -12,9 +16,9 @@ incubator: 	https://charts.helm.sh/incubator
 # Configure cluster access
 https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl
 
-gcloud container clusters get-credentials mygke-2069835791 --region asia-southeast1
+gcloud container clusters get-credentials YOUR_CLUSTER --region asia-southeast1
 
-gcloud container clusters get-credentials --internal-ip mygke-2069835791 --region asia-southeast1
+gcloud container clusters get-credentials --internal-ip YOUR_CLUSTER --region asia-southeast1
 
 
 

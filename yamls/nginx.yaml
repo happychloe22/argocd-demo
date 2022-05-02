@@ -31,5 +31,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
+      - image: nginx:latest
         name: nginx

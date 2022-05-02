@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: nginx
+    foo: ${foo}
   name: nginx
   namespace: default
 spec:
